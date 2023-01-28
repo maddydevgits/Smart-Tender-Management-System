@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body bgcolor="RosyBrown">
+    <font face="Times New Roman">
+        <center>
+        <table border="1" cellspacing="2" cellpadding="5" width="100%">
+        </center></td><td colspan="5"><center><font size="8" color="blue"><marquee width=95%, bgcolor="lavender">Smart Tender Management System</marquee></center></td></tr>
+        <tr><td><center>
+        <a href="/tenderloginsuccess">Home</a></center></td>
+        <td><center>
+        <a href="/createtender">Create Tender</a></center></td>
+        <td><center>
+        <a href="/viewtenders">View Tenders</a></center></td>
+        <td><center>
+        <a href="/viewbids">View Bids</a></center></td>
+        <td><center>
+        <a href="/logout"><button>Logout</button></a></center></td>
+        </table>
+        </center>
+        </font>
+<br><br><br><br><br><br><br>
+<center>
+<font face="Times New Roman" size="4" ><h2><u><b>CREATE TENDER</b></u></h2></font>
+<br><br><br>
+<form action="/createtenderform" method="post">
+<table>
+<tr>
+<td>Tender ID:</td>
+<td><input type="number" name="tenderid"></td>
+</tr>
+<tr>
+<td>Tender Information:</td>
+<td><input type="text" name="tenderinfo"></td>
+</tr>
+<tr>
+<td><input type="submit" value="SUBMIT"></td>
+</tr>
+</table>
+</form>
+<span style="color:green">{{res}}</span>
+</center>
+</body>
+</html>

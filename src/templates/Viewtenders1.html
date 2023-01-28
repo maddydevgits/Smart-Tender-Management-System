@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>viewtenders</title>
+</head>
+<body bgcolor="Lavender">
+    <font face="Times New Roman">
+        <center>
+        <table border="1" cellspacing="2" cellpadding="5" width="100%">
+        </center></td><td colspan="5"><center><font size="8" color="blue"><marquee width=95%, bgcolor="lavender">Smart Tender Management System</marquee></center></td></tr>
+        <tr><td><center>
+        <a href="/bidderloginsuccess">Home</a></center></td>
+        <td><center>
+        <a href="/viewtenders1">View Tenders</a></center></td>
+        <td><center>
+        <a href="/createbid">Create Bid</a></center></td>
+        <td><center>
+        <a href="/viewbids1">View Bids</a></center></td>
+        <td><center>
+        <a href="/logout"><button>Logout</button></a></center></td>
+        </table>
+        </center>
+    </font>
+<center>
+<h1 ALIGN="center"><u>VIEW TENDERS</u></h1>
+<table border="1">
+<tr>
+   <th>Tender Id</th>
+   <th>Tender Owner</th>
+   <th>Tender Information</th>
+</tr>
+{%for i in range(0,l)%}
+   <tr>
+      <td>{{dashboard_data[i][0]}}</td>
+      <td>{{dashboard_data[i][1]}}</td>
+      <td>{{dashboard_data[i][2]}}</td>
+      
+   </tr>
+{%endfor%}
+
+</table>
+</center>
+</body>
+</html>

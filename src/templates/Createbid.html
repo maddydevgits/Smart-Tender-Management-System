@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<body bgcolor="RosyBrown">
+    <font face="Times New Roman">
+        <center>
+        <table border="1" cellspacing="2" cellpadding="5" width="100%">
+        </center></td><td colspan="5"><center><font size="8" color="blue"><marquee width=95%, bgcolor="lavender">Smart Tender Management System</marquee></center></td></tr>
+        <tr><td><center>
+        <a href="/bidderloginsuccess">Home</a></center></td>
+        <td><center>
+        <a href="/viewtenders1">View Tenders</a></center></td>
+        <td><center>
+        <a href="/createbid">Create Bid</a></center></td>
+        <td><center>
+        <a href="/viewbids1">View Bids</a></center></td>
+        <td><center>
+        <a href="/logout"><button>Logout</button></a></center></td>
+        </table>
+        </center>
+    </font>
+<br><br><br><br><br><br><br>
+<center>
+<font face="Times New Roman" size="4" ><h2><u><b>CREATE BID</b></u></h2></font>
+<br><br><br>
+<form action="/createbidform" method="post">
+<table>
+<tr>
+<td>Tender Id:</td>
+<td><input type="number" name="tenderid"></td>
+</tr>
+<tr>
+<td>Bid Amount:</td>
+<td><input type="text" name="bidamount"></td>
+</tr>
+<tr>
+<td>Bid Email:</td>
+<td><input type="text" name="bidemail"></td>
+</tr>
+<tr>
+<td><input type="submit" value="SUBMIT"></td>
+</tr>
+</table>
+</form>
+<span style="color:green">{{res}}</span>
+</center>
+</body>
+</html>
